@@ -1,3 +1,5 @@
+package Nodes;
+
 public class NodeHelper {
     static int maxValue(Node node) {
         if (node == null) {
