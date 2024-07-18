@@ -19,9 +19,10 @@ public class StringDuplicationHelper {
         return st.toCharArray();
     }
 
-    public static void stringDuplicatesTest(){
+    public static void identifyStringDuplicates(){
         char s[] = "happynewyear".toCharArray();
         int n = s.length;
+        System.out.print("\n");
         System.out.print(removeDuplicates(s,n));
     }
 }

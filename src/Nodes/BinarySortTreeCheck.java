@@ -1,6 +1,9 @@
 package Nodes;
 
-public class NodeHelper {
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class BinarySortTreeCheck {
     static int maxValue(Node node) {
         if (node == null) {
             return Integer.MIN_VALUE;
@@ -53,7 +56,15 @@ public class NodeHelper {
         return true;
     }
 
-    public static void bstTest(){
+    public static void checkIfTreeIsBst(){
+       /*    4
+            / \
+           2   5
+          / \
+         1  3
+
+         */
+
         Node root = new Node(4);
         root.left = new Node(2);
         root.right = new Node(5);
@@ -63,11 +74,11 @@ public class NodeHelper {
         root.left.right = new Node(3);
 
         // Function call
-        if (NodeHelper.isBST(root)) {
-            System.out.print("Is BST");
+        if (BinarySortTreeCheck.isBST(root)) {
+            System.out.print("\nIs BST");
         }
         else {
-            System.out.print("Not a BST");
+            System.out.print("\nNot a BST");
         }
     }
 }
